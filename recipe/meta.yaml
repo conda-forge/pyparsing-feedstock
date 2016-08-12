@@ -1,4 +1,4 @@
-{% set version="2.1.1" %}
+{% set version="2.1.7" %}
 
 package:
   name: pyparsing
@@ -7,7 +7,7 @@ package:
 source:
   fn: pyparsing-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pyparsing/pyparsing-{{ version }}.tar.gz
-  md5: 5ce9096d94f553e2bc1fd366fba65558
+  sha256: 7faf33a14ab1413d9a73ffe4b5a02d604cff6fba2bc39d5ea71b10ffc67d75ac
 
 build:
   number: 0
