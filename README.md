@@ -15,6 +15,18 @@ regular expressions. The pyparsing module provides a library of classes
 that client code uses to construct the grammar directly in Python code.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyparsing-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyparsing-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyparsing-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyparsing-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyparsing-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyparsing-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/version.svg)](https://anaconda.org/conda-forge/pyparsing)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/downloads.svg)](https://anaconda.org/conda-forge/pyparsing)
+
 Installing pyparsing
 ====================
 
@@ -35,7 +47,6 @@ It is possible to list all of the versions of `pyparsing` available on your plat
 ```
 conda search pyparsing --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -71,18 +82,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyparsing-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyparsing-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyparsing-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyparsing-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyparsing-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyparsing-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/version.svg)](https://anaconda.org/conda-forge/pyparsing)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/downloads.svg)](https://anaconda.org/conda-forge/pyparsing)
 
 
 Updating pyparsing-feedstock
