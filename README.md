@@ -18,14 +18,15 @@ that client code uses to construct the grammar directly in Python code.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyparsing-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyparsing-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyparsing-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyparsing-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyparsing-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyparsing-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyparsing-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyparsing-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/version.svg)](https://anaconda.org/conda-forge/pyparsing)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyparsing/badges/downloads.svg)](https://anaconda.org/conda-forge/pyparsing)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyparsing-green.svg)](https://anaconda.org/conda-forge/pyparsing) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyparsing.svg)](https://anaconda.org/conda-forge/pyparsing) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyparsing.svg)](https://anaconda.org/conda-forge/pyparsing) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyparsing.svg)](https://anaconda.org/conda-forge/pyparsing) |
 
 Installing pyparsing
 ====================
