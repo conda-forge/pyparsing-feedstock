@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: pyparsing
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyparsing/pyparsing-{{ version }}.tar.gz
-  sha256: 0832bcf47acd283788593e7a0f542407bd9550a55a8a8435214a1960e04bcb04
+  sha256: f493ee323be1e94929416b3585eefcc04943115cecbaaa35a8c86d1a2368af19
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
@@ -27,7 +27,9 @@ test:
 about:
   home: http://pyparsing.wikispaces.com/
   license: MIT
-  license_file: LICENSE
+  # removed from the src tarball
+  # See https://github.com/pyparsing/pyparsing/issues/31
+  #license_file: LICENSE
   summary: Create and execute simple grammars
   description: |
     The pyparsing module is an alternative approach to creating and executing
