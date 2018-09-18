@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
@@ -27,7 +27,9 @@ test:
 about:
   home: http://pyparsing.wikispaces.com/
   license: MIT
-  license_file: LICENSE
+  # removed from the src tarball
+  # See https://github.com/pyparsing/pyparsing/issues/31
+  #license_file: LICENSE
   summary: Create and execute simple grammars
   description: |
     The pyparsing module is an alternative approach to creating and executing
