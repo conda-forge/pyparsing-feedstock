@@ -27,9 +27,7 @@ test:
 about:
   home: http://pyparsing.wikispaces.com/
   license: MIT
-  # removed from the src tarball
-  # See https://github.com/pyparsing/pyparsing/issues/31
-  #license_file: LICENSE
+  license_file: LICENSE
   summary: Create and execute simple grammars
   description: |
     The pyparsing module is an alternative approach to creating and executing
