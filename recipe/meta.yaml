@@ -9,9 +9,9 @@ source:
   sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,6 +23,10 @@ requirements:
 test:
   imports:
     - pyparsing
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pyparsing.wikispaces.com/
