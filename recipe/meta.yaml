@@ -1,4 +1,4 @@
-{% set version = "2.4.6" %}
+{% set version = "2.4.7" %}
 
 package:
   name: pyparsing
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyparsing/pyparsing-{{ version }}.tar.gz
-  sha256: 4c830582a84fb022400b85429791bc551f1f4871c33f23e44f353119e92f969f
+  sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
 
 build:
-  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,6 +23,10 @@ requirements:
 test:
   imports:
     - pyparsing
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pyparsing.wikispaces.com/
