@@ -1,4 +1,4 @@
-{% set version = "2.4.7" %}
+{% set version = "3.0.0" %}
 
 package:
   name: pyparsing
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyparsing/pyparsing-{{ version }}.tar.gz
-  sha256: c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1
+  sha256: 001cad8d467e7a9248ef9fd513f5c0d39afcbcb9a43684101853bd0ab962e479
 
 build:
   number: 0
