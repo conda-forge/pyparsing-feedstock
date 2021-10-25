@@ -5,9 +5,13 @@ Home: http://pyparsing.wikispaces.com/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyparsing-feedstock/blob/master/LICENSE.txt)
 
 Summary: Create and execute simple grammars
+
+Development: https://svn.code.sf.net/p/pyparsing/code/
+
+Documentation: http://pyparsing.wikispaces.com/Documentation
 
 The pyparsing module is an alternative approach to creating and executing
 simple grammars, vs. the traditional lex/yacc approach, or the use of
@@ -42,6 +46,7 @@ Installing `pyparsing` from the `conda-forge` channel can be achieved by adding 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `pyparsing` can be installed with:
@@ -112,14 +117,15 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
+* [@jan-janssen](https://github.com/jan-janssen/)
 * [@msarahan](https://github.com/msarahan/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
