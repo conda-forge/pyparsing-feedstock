@@ -7,17 +7,9 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyparsing-feedstock/blob/main/LICENSE.txt)
 
-Summary: Create and execute simple grammars
+Summary: Python parsing module
 
-Development: https://svn.code.sf.net/p/pyparsing/code/
-
-Documentation: http://pyparsing.wikispaces.com/Documentation
-
-The pyparsing module is an alternative approach to creating and executing
-simple grammars, vs. the traditional lex/yacc approach, or the use of
-regular expressions. The pyparsing module provides a library of classes
-that client code uses to construct the grammar directly in Python code.
-
+Documentation: https://pythonhosted.org/pyparsing/
 
 Current build status
 ====================
@@ -153,7 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@jan-janssen](https://github.com/jan-janssen/)
-* [@msarahan](https://github.com/msarahan/)
-* [@ocefpaf](https://github.com/ocefpaf/)
+* [@thewchan](https://github.com/thewchan/)
 
