@@ -1,25 +1,25 @@
-{% set version = "3.0.9" %}
+{% set name = "pyparsing" %}
+{% set version = "1.5.6" %}
 
 package:
-  name: pyparsing
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyparsing/pyparsing-{{ version }}.tar.gz
-  sha256: 2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyparsing-{{ version }}.tar.gz
+  sha256: 5c84aa4500e82d5aa2c0842d5628c5da985e68ac1fb33554e0e5547eb3c85a75
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - flit-core
+    - python >=3.0
   run:
-    - python >=3.6
+    - python >=3.0
 
 test:
   imports:
@@ -31,20 +31,11 @@ test:
 
 about:
   home: http://pyparsing.wikispaces.com/
+  summary: Python parsing module
+  doc_url: https://pythonhosted.org/pyparsing/
   license: MIT
   license_file: LICENSE
-  summary: Create and execute simple grammars
-  description: |
-    The pyparsing module is an alternative approach to creating and executing
-    simple grammars, vs. the traditional lex/yacc approach, or the use of
-    regular expressions. The pyparsing module provides a library of classes
-    that client code uses to construct the grammar directly in Python code.
-  doc_url: http://pyparsing.wikispaces.com/Documentation
-  dev_url: https://svn.code.sf.net/p/pyparsing/code/
 
 extra:
   recipe-maintainers:
     - thewchan
-    - msarahan
-    - ocefpaf
-    - jan-janssen
