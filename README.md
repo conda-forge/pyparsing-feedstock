@@ -1,11 +1,11 @@
-About pyparsing
-===============
+About pyparsing-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyparsing-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pyparsing.wikispaces.com/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyparsing-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create and execute simple grammars
 
@@ -156,4 +156,5 @@ Feedstock Maintainers
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@msarahan](https://github.com/msarahan/)
 * [@ocefpaf](https://github.com/ocefpaf/)
+* [@thewchan](https://github.com/thewchan/)
 
