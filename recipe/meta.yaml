@@ -9,17 +9,17 @@ source:
   sha256: cbf74e27246d595d9a74b186b810f6fbb86726dbf3b9532efb343f6d7294fe9c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
-    - flit-core
+    - flit-core >=3.2,<4
   run:
-    - python >=3.6
+    - python >=3.9
 
 test:
   imports:
